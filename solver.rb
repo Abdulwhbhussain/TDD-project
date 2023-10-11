@@ -8,7 +8,7 @@ class Solver
     return 'fizz' if (number % 3).zero?
     return 'buzz' if (number % 5).zero?
 
-    number
+    number.to_s
   end
 
   def check_factorial(number)
