@@ -36,7 +36,7 @@ describe Solver do
     end
 
     it 'should raise an ArgumentError if number less than 0' do
-      expect{@solver.check_factorial(-1)}.to raise_error(ArgumentError)
+      expect { @solver.check_factorial(-1) }.to raise_error(ArgumentError)
     end
 
     it 'should return the factorial of number given' do

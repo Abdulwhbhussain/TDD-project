@@ -13,11 +13,11 @@ class Solver
 
   def check_factorial(number)
     if number.zero?
-      return 1
-    elsif number < 0
+      1
+    elsif number.negative?
       raise ArgumentError, 'Number should be a non-negative'
     else
-      return number * check_factorial(number - 1)
+      number * check_factorial(number - 1)
     end
   end
 end
