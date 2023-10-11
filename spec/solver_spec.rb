@@ -29,4 +29,18 @@ describe Solver do
       expect(@solver.fizzbuzz(7)).to eq(7)
     end
   end
+
+  describe '#Factorial method' do
+    it 'should return 1 if number is 0' do
+      expect(@solver.check_factorial(0)).to eq(1)
+    end
+
+    it 'should raise an ArgumentError if number less than 0' do
+      expect{@solver.check_factorial(-1)}.to raise_error(ArgumentError)
+    end
+
+    it 'should return the factorial of number given' do
+      expect(@solver.check_factorial(5)).to eq(120)
+    end
+  end
 end
