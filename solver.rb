@@ -21,6 +21,3 @@ class Solver
     end
   end
 end
-
-t = Solver.new
-puts t.check_factorial(5)
